@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Example</title>
+		<link rel="stylesheet" href="assets/style_form.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Esempio di utilizzo del tag "Form"</h1>
+			</header>
+			<form onsubmit="alert ('Inviato')">
+				<!-- Il tag label neccessita di un attributo chiamato "for" : il valore di tale attributo deve essere lo stesso del valore dell'attributo "id" associato all'input -->
+				<div>
+					<label for="name">Nome</label>
+					<input
+						type="text"
+						id="name"
+						placeholder="inserisci qui il tuo nome"
+						required
+						maxlength="10"
+						autofocus />
+				</div>
+
+				<div>
+					<label for="surname">Cognome</label>
+					<input
+						type="text"
+						id="surname"
+						placeholder="inserisci qui il tuo cognome"
+						required />
+				</div>
+				<div>
+					<label for="age">Età</label>
+					<input
+						type="number"
+						id="age"
+						placeholder="inserisci la tua età"
+						required />
+				</div>
+				<div>
+					<label for="bio">Biografia</label>
+					<textarea id="bio" name="bio" rows="10"> </textarea>
+				</div>
+
+				<!-- Questo bottone sarà adito dell'invio del form in cui è contenuto grazie al suo attributo "submit" -->
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</body>
+</html>
