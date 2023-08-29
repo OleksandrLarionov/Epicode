@@ -1,0 +1,65 @@
+
+
+header{
+    justify-content: center;
+    /* margin: 0 auto; */
+    display: flex;
+}
+.topbar {
+    width: 250px;
+    height: 14vh;
+}
+
+.logo {  width: 100%; margin: 0 auto; justify-content: center;cursor: pointer;}
+
+h1{
+    text-align: center; color: rgb(226, 35, 42);
+}
+
+main{
+    display: grid;
+    width: 1080px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    
+
+}
+
+.dati-utente{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 7rem;
+
+}
+.dati-utente input {
+    width: 20rem;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.genere-musicale {
+    text-align: center;
+}
+h2 {
+    color:RGB(226, 35, 42);
+}
+
+table{
+    display: flex;
+    
+    justify-content: center;
+    
+}
+
+th, td {border: medium solid  rgb(250, 212, 211);padding: 4px; border-radius: 10px;}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+}
+footer button {
+    border-radius: 10px;
+    cursor: pointer;
+}
