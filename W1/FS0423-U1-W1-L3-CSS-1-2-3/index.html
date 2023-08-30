@@ -6,13 +6,61 @@
 		<title>CSS Basics</title>
 		<!-- 2 -->
 		<style>
+			/* selettore di classe */
+			.last-h3 {
+				color: red;
+				/* questo selettore è MOLTO più specifico di un selettore tag, ha la specificità 10 */
+			}
+			.another-class {
+				color: blue;
+			}
 			/* Qui scrivo un css vero e proprio, formato da 2 parti */
 			/* selettore {proprietà:valore} */
 			h3 {
 				color: palevioletred;
+				font-size: 20px;
+			}
+			/* scriviamo altre regole */
+			h3 {
+				color: rgb(28, 148, 34);
+				/* a parità di specificità del selettore, l'ultima regola applicata vince! */
+			}
+			/* li, come h3, come p, è un selettore di TAG */
+			/* ha una specificità molto bassa, 1 */
+			/* li {
+        font-style: italic;
+      } */
+			/* selettore di discendenza generica */
+			/* prenderà solamente le <a> figlie di <li> figli di una <ol> */
+
+			ol li a {
+				font-style: italic;
+			}
+			/* selettore di ID, ha specificità 100 */
+			#wolf {
+				/* sto andando a cercare un elemento con id="wolf"nella pagina */
+
+				margin-left: 20px;
+				font-size: 1.5em;
+			}
+			ul {
+				font-size: 10px;
+			}
+
+			/* selezionerebbe tutti gli elementi dotati di class="special"
+        che però sono anche contemporaneamente FIGLI di un elemento con id="banner" */
+
+			main li {
+				/* tutti gli li di tutte le liste, perchè lo spazio è un selettore di discendenza "generico" */
+			}
+
+			p + h3 {
+				display: none;
+				/* tolgo l'h3 dalla pagina */
 			}
 		</style>
 		<!-- 3 -->
+		<!-- questo è un collegamento al file css contenuto nella cartella "assets" -->
 		<link rel="stylesheet" href="assets/style.css" />
 	</head>
 	<body>
@@ -29,13 +77,28 @@
 				</p>
 				<h3>Raccontiamo una storia, personaggi</h3>
 				<ul>
-					<li>Porcellino 1</li>
+					<li class="uno due">Porcellino 1</li>
 					<!-- 1 -->
 					<li style="color: red; font-weight: bold">Porcellino 2</li>
-					<li>Porcellino 3</li>
-					<li>Lupo</li>
+					<li class="uno">Porcellino 3</li>
+					<!-- questo id, wolf, non lo posso riassegnare a nessun'altro tag html in questo documento -->
+					<li id="wolf">Lupo</li>
 				</ul>
-				<h3>Questo è un titolo di test</h3>
+				<h3>Film in ordine cronologico</h3>
+				<ol>
+					<li>Oppenheimer</li>
+					<li>
+						<a
+							href="https://it.wikipedia.org/wiki/Tenet"
+							rel="nofollow"
+							target="_blank"
+							>Tenent</a
+						>
+					</li>
+					<!-- posso riutilizzare la classe "another-class"quante volte vogliamo -->
+					<li class="another-class">Dunkirk</li>
+				</ol>
+				<h3 class="last-h3 another-class">Questo è un titolo di test</h3>
 				<img src="https://placekitten.com/300" alt="Gattino a caso" />
 			</main>
 		</div>
