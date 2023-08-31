@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 h1 {
   font-size: 2em;
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  /* dopo le virgole indichiamo il font di ricupero "fall-back" */
+  font-weight: 700;
   
 }
 
