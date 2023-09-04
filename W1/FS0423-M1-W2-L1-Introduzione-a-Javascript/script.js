@@ -112,3 +112,47 @@ const epicodeURL = 'http://www.epicode.com'
 
 const myLocation = 'FVG'
 console.log('Io mi chiamo'+' '+teacherName +', abito in '+ myLocation)
+
+
+
+//operatori di assegnazione
+let myVariable =50
+myVariable += 100 // aggiungere 100 al valore attuale di myVariable
+console.log(myVariable)
+
+// VERIFICA DELLE CONDIZIONI
+let n1 = 5
+let n2 = 10
+let n3 = 10
+
+// < > <= >=
+console.log(n1 < n2) // (5 < 10) --> true
+console.log(n1 >n2) // (5 <= 10) --> true
+console.log(n1 > n2) // false
+
+// come verifico se n2 è UGUALE a n3? ===
+// esiste anche il == verifica l'ugualianza di due valori a scapito del loro tipo
+
+console.log(5 == '5') // --> true....verifica il valore dei due comparatori ma non il tipo (NON è DA USARE)
+
+console.log(5 === 5) // true
+console.log(5 === '5') // false
+
+// console.log(n2 = n3) // operatore di ASSEGNAZIONE , abbiamo assegnato a n2 il valore di n3
+
+// OPERATORI LOGICI, AND E OR
+// AND --> &&  l'operatore and tornerà ture se tutte le parti collegate sono ture
+// OR --> ||
+// NOT --> !
+
+console.log(n1 < n2) // true
+console.log ((n1 > n2) && (n2 < n3)) // (true && false) ----> false 
+console.log ((n1 < n2) && (n2 <= n3)) // (true && true) ----> true
+
+console.log ((n1 > n2) || (n2 < n3))  // (true || false ) ---false
+console.log ((n1 > n2) || (n2 <= n3))  // (true || true) ----> true
+
+console.log(!(n1 < n2)) // false, il punto esclamativo ribalta il significato di un'espressione
+
+console.log(5 === 5) // true
+console.log(5 !== 6) // false
