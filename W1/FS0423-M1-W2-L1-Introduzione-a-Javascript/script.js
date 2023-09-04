@@ -156,3 +156,15 @@ console.log(!(n1 < n2)) // false, il punto esclamativo ribalta il significato di
 
 console.log(5 === 5) // true
 console.log(5 !== 6) // false
+
+// ESEMPIO DI OPERATORE TERNARIO
+
+// a differenza di strettamente uguale(===) e  resto (%) l'operatore ternario ( ? ) è l'unico che accetta 3 operatori
+//  costituito da (condizione) ? true : false
+// es:
+
+let anni = prompt('inserisci la tua età: ')
+const ingresso = (anni <= 18) ? 'ingresso vietato' : 'ingresso permesso'
+
+
+document.write(ingresso)
