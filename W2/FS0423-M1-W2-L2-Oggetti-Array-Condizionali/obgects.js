@@ -61,3 +61,40 @@ comedian.mostPopularCharacter = 'Tafazzi'
 delete comedian.gender // eliminata la proprietà
 
 console.log(comedian) // ora ha 67 anni 
+
+
+// PICCOLO TRANELLO
+
+let a = 5
+let b = a
+
+b = 10
+
+// quanto vale a? vale 5!
+
+console.log(a) // 5
+
+const objA = {
+  nome: 'Stefano'
+}
+
+const objB = objA
+
+objB.name = 'Mario'
+
+// qual è il valore di name in objA
+console.log(objA.name) // 'Mario'
+
+
+// come faccio effettivamente a creare un oggerro "separato indipendente da objA?
+
+const objC = {
+  name: 'Stefano',
+}
+
+/// Object.assign() crea effettivamente un "clone"di objC e lo chiama onjD
+const objD = Object.assign({}, objC)
+
+objC.name = 'Mario'
+
+console.log(objD.name) // 'Stefano'
