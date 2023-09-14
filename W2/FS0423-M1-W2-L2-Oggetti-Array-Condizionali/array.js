@@ -62,3 +62,17 @@ console.log(fruits)
 delete fruits[0] // non accorcia l'arrey dopo l'eliminazione
 
 fruits.splice(0, 1) // due valori per splice: uno punto di partenza e il secondo il numero di elementi da cancellare
+
+// se è 0, il metodo viene usato solo per inserire nuovi valori
+
+// .pop() fa saltare un elemento dall'array
+
+
+// sostituire un elemento in un Array
+let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+array1.splice(9, 1, 100)
+
+console.log (array1)
+
+// anche array1[9] = 100

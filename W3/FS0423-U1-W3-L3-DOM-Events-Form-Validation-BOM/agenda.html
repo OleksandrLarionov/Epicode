@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/agenda.css" />
+		<title>Agenda</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Forms</a></li>
+						<li><a href="">Agenda</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<h1>Epicode's Agenda app</h1>
+				<form action="" id="new-contacts">
+					<div>
+						<label for="firstname">Nome</label>
+						<input type="text" id="firstname" />
+					</div>
+					<div>
+						<label for="lastname">Cognome</label>
+						<input type="text" id="lastname" />
+					</div>
+					<div>
+						<label for="phone">Telefono</label>
+						<input type="tel" id="phone" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" />
+					</div>
+					<div>
+						<button type="submit">Salva contatto</button>
+						<button type="reset">Svuota campi</button>
+					</div>
+				</form>
+			</main>
+			<section id="saved-contact">
+				<div></div>
+			</section>
+		</div>
+		<script src="js/agenda.js"></script>
+	</body>
+</html>
