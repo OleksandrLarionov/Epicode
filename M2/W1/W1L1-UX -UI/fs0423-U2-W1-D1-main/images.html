@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive images</title>
+    <style>
+      main img {
+        max-width: 100%;
+        /* in questo modo la larghezza dell'immagine seguirà la larghezza del suo contenitore */
+        /* ma solamente fino al raggiungimento della dimensione nativa dell'immagine */
+      }
+
+      #custom-image {
+        width: 400px;
+        height: 400px;
+        background: url(https://placekitten.com/400);
+      }
+
+      @media screen and (min-width: 600px) {
+        #custom-image {
+          width: 600px;
+          height: 600px;
+          background: url(https://placekitten.com/600);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="https://placedog.net/600" />
+    </main>
+    <aside>
+      <!-- immagine con src ottimizzata a seconda della dimensione schermo -->
+      <div id="custom-image"></div>
+    </aside>
+  </body>
+</html>
